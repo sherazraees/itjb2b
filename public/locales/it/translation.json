@@ -1,0 +1,20 @@
+{
+    "title": "Benvenuti in react-i18next",
+    "description": {
+      "part1": "Testo in Italiano Parte 1",
+      "part2": "Testo in Italiano Parte 2"
+    },
+    "login":{
+      "1": "Effettua il login per utilizzare l'applicazione",
+      "2": "Password dimenticata?",
+      "3": "Registrazione",
+      "4": "Questa applicazione può essere utilizzata solo dai clienti di",
+      "5": "Registrati!"
+    },
+    "cerca":{
+      "1": "Cerca"
+    },
+    "Header":{
+      "1": "Switch to English"
+    }
+  }
