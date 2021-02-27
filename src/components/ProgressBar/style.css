@@ -1,0 +1,14 @@
+.progressBar {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.progressBar-text {
+  margin-right: 10px;
+  width: 40%;
+}
+
+.progressBar-bar {
+  width: 100px;
+}

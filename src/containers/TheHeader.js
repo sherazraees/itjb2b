@@ -7,6 +7,8 @@ import {
   CHeaderNav,
   CSubheader,
   CBreadcrumbRouter,
+  CNavbarNav,
+  CNavLink,
 } from "@coreui/react";
 
 // routes config
@@ -16,6 +18,9 @@ import { TheHeaderDropdown } from "./index";
 
 import Cerca from "src/common/Cerca";
 import DarkMode from "src/common/DarkMode";
+import LanguageSwitcher from "src/common/LanguageSwitcher";
+import ProgressBar from "src/components/ProgressBar";
+import Cart from "src/components/Cart";
 
 const TheHeader = () => {
   const dispatch = useDispatch();
@@ -57,11 +62,15 @@ const TheHeader = () => {
         />
       </CHeaderBrand>
 
-      <CHeaderNav className="mr-auto"></CHeaderNav>
+      <CHeaderNav className="mr-auto">
+        <Cerca />
+      </CHeaderNav>
 
       <CHeaderNav className="px-3">
-        <Cerca />
+        <ProgressBar />
+        <Cart />
         <DarkMode />
+        <LanguageSwitcher />
         <TheHeaderDropdown />
       </CHeaderNav>
 
@@ -70,6 +79,11 @@ const TheHeader = () => {
           className="border-0 c-subheader-nav m-0 px-0 px-md-3"
           routes={routes}
         />
+        <CNavbarNav className="border-0 c-subheader-nav m-0 px-0 px-md-3">
+          <CNavLink style={{ padding: "10px" }}>Home</CNavLink>
+          <CNavLink style={{ padding: "10px" }}>Contact</CNavLink>
+          <CNavLink style={{ padding: "10px" }}>Address</CNavLink>
+        </CNavbarNav>
       </CSubheader>
     </CHeader>
   );

@@ -8,7 +8,13 @@ function DarkMode() {
   const darkMode = useSelector((state) => state.darkMode);
 
   return (
-    <div>
+    <div
+    // style={{
+    //   marginLeft: "10px",
+    //   borderLeft: "1px solid gray",
+    //   height: "30px",
+    // }}
+    >
       <CToggler
         inHeader
         className="ml-1"
